@@ -1,0 +1,17 @@
+html{
+    font-size: 62.5%;
+}
+header{
+    font-size: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+}
+.profile-picture{
+    background-color: rgb(250,247,247);
+    padding-top: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 3rem;
+}
