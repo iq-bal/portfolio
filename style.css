@@ -1,6 +1,7 @@
 html{
     font-size: 62.5%;
 }
+
 header{
     font-size: 2rem;
     padding-left: 2rem;
@@ -8,6 +9,7 @@ header{
     padding-top: 6rem;
     padding-bottom: 3rem;
 }
+
 .profile-picture{
     background-color: rgb(250,247,247);
     padding-top: 3rem;
@@ -15,6 +17,7 @@ header{
     padding-right: 5rem;
     padding-bottom: 3rem;
 }
+
 .fa-brands{
     font-size: 5rem;
     padding: 1rem;
@@ -46,9 +49,13 @@ header{
     50% { border-color: orange; }
   }
 
-
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .typewriter h1 {
-        white-space: wrap; /* Allow content to wrap on smaller devices */
+        white-space: wrap;
+    }
+    .about-me{
+        padding-top: 3rem;
     }
 }
+
+ 
