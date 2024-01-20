@@ -22,8 +22,7 @@ header{
     font-size: 5rem;
     padding-right: 1rem;
     padding-left: 0rem;
-    padding-top: 5rem;
-    /* padding: 1rem; */
+    padding-top: 2.5rem;
 }
 
 .fa-regular{
@@ -58,6 +57,63 @@ header{
     justify-content: end;
 }
 
+.show-off{
+    background-color: white;
+    height: auto;
+}
+
+.vertical-line{
+    height: 100%;
+    width: 100%;
+    border-left: 4px solid black;    
+}
+
+.projects{
+    margin-top: 3rem;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+.projects-branch{
+    display: flex; 
+    justify-content: flex-end;
+    width: 35%;
+    /* border: 1px solid saddlebrown; */
+}
+
+.projects-content{
+    margin-left: 35%;
+    border-left: 3px solid black;
+    border-radius: 3px;
+}
+
+.projects-design{
+    background-color: rgb(250,247,247);
+    margin-right: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.projects-details{
+    background-color: rgb(250,247,247);
+    border-radius: 15px;
+    padding: 1.5rem;
+}
+
+.projects-caption{
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: italic;
+    color: grey;
+}
+
+hr {
+    border: none; /* Remove the default border */
+    height: 2px; /* Set the height of the line */
+    background-color: black; /* Set the background color of the line */
+}
+
+
 @media (max-width: 768px) {
     .typewriter h1 {
         white-space: wrap;
@@ -67,6 +123,7 @@ header{
     }
     .social-media-footer{
         justify-content: left;
+        padding: 0rem;
     }
 }
 
