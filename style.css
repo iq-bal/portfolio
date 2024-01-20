@@ -20,8 +20,12 @@ header{
 
 .fa-brands{
     font-size: 5rem;
-    padding: 1rem;
+    padding-right: 1rem;
+    padding-left: 0rem;
+    padding-top: 5rem;
+    /* padding: 1rem; */
 }
+
 .fa-regular{
     font-size: 2rem;
 }
@@ -49,6 +53,11 @@ header{
     50% { border-color: orange; }
   }
 
+.social-media-footer{
+    display: flex; 
+    justify-content: end;
+}
+
 @media (max-width: 768px) {
     .typewriter h1 {
         white-space: wrap;
@@ -56,6 +65,11 @@ header{
     .about-me{
         padding-top: 3rem;
     }
+    .social-media-footer{
+        justify-content: left;
+    }
 }
+
+
 
  
