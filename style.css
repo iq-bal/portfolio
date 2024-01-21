@@ -92,6 +92,9 @@ header{
     margin-right: 1.5rem;
     padding: 1.5rem;
     border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .projects-details{
@@ -124,6 +127,9 @@ hr {
     .social-media-footer{
         justify-content: left;
         padding: 0rem;
+    }
+    .projects-details{
+        margin-top: 2rem;
     }
 }
 
