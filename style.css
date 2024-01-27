@@ -244,6 +244,7 @@ footer {
   }
   .projects-details {
     margin-top: 2rem;
+    margin-right: 0;
   }
   .profile-picture {
     grid-template-columns: 1fr;
