@@ -1,6 +1,23 @@
 html {
   font-size: 62.5%;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1{
+  font-size: (1.375rem + 1.5vw); 
+}
+
 header {
   font-size: 2rem;
   padding-left: 2rem;
@@ -10,14 +27,17 @@ header {
   display: flex;
   justify-content: space-between;
 }
+
 header ul {
   display: flex;
   justify-content: start;
 }
+
 header ul li {
   padding-right: 1.5rem;
   list-style-type: none;
 }
+
 header ul li a {
   font-family: "Unna", serif;
   font-size: 2rem;
@@ -25,10 +45,22 @@ header ul li a {
   color: grey;
   text-decoration: none;
 }
+
 .navbar-text {
   font-weight: 900;
   font-size: 3rem;
   font-family: "Cedarville Cursive", "cursive";
+}
+
+.navbar-toggler{
+  float: right;
+  display: none;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 0;
 }
 
 .profile-picture {
@@ -38,16 +70,19 @@ header ul li a {
   background-color: rgb(250, 247, 247);
   padding: 3rem 5rem;
 }
-
-.profile-picture img{
+.profile-picture img {
   width: 100%;
   height: auto;
 }
-
-.about-me-details{
+.about-me-details {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+
+.about-me-details h1 {
+  font-size: 2rem;
 }
 
 .fa-brands {
@@ -56,7 +91,6 @@ header ul li a {
   padding-left: 0rem;
   padding-top: 2.5rem;
 }
-
 .mailto {
   margin-top: 1.5rem;
   padding: 2rem;
@@ -64,7 +98,6 @@ header ul li a {
   width: 140px;
   border-radius: 20px;
 }
-
 .mailto a {
   text-decoration: none;
   font-size: 2rem;
@@ -73,7 +106,6 @@ header ul li a {
   font-family: "Unna", serif;
   font-style: normal;
 }
-
 .fa-regular {
   font-size: 2rem;
 }
@@ -139,12 +171,12 @@ header ul li a {
   border-radius: 3px;
 }
 
-.projects-grid-container{
+.projects-grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.projects-grid-container img{
+.projects-grid-container img {
   width: 100%;
   height: auto;
 }
@@ -177,14 +209,29 @@ hr {
   background-color: black; /* Set the background color of the line */
 }
 
-
-footer{
+footer {
   background-color: rgb(250, 247, 247);
   padding: 3rem 5rem;
 }
 
-
 @media (max-width: 768px) {
+  .navbar-toggler{
+    display: block;
+  }
+  header ul {
+    display: none;
+    flex-direction: column;
+    justify-content: end;
+  }
+  header ul li{
+    padding-top: 1.5rem;
+  }
+  header ul.show{
+    display: flex;
+  }
+
+
+
   .typewriter h1 {
     white-space: wrap;
   }
@@ -198,10 +245,10 @@ footer{
   .projects-details {
     margin-top: 2rem;
   }
-  .profile-picture{
+  .profile-picture {
     grid-template-columns: 1fr;
   }
-  .projects-grid-container{
+  .projects-grid-container {
     grid-template-columns: 1fr;
   }
 }
