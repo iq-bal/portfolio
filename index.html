@@ -15,91 +15,74 @@
       crossorigin="anonymous"
     ></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Montserrat:wght@100&family=Pacifico&family=Teko&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Montserrat:wght@100&family=Pacifico&family=Teko&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Inconsolata:wght@200&family=Montserrat:wght@100&family=Pacifico&family=Teko&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Inconsolata:wght@200&family=Montserrat:wght@100&family=Pacifico&family=Teko&display=swap" rel="stylesheet">
-
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Unna:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unna:wght@700&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-sm">
-        <div class="container-fluid">
-          <!-- <a class="navbar-brand" href="#">Iqbal Mahamud</a> -->
-          <span class="navbar-text">Iqbal Mahamud</span>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapsibleNavbar"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item"><a href="" class="nav-link">About</a></li>
-              <li class="nav-item">
-                <a href="" class="nav-link">Publications</a>
-              </li>
-              <li class="nav-item">
-                <a href="" class="nav-link">Projects</a>
-              </li>
-              <li class="nav-item"><a href="" class="nav-link">Start Up</a></li>
-              <li class="nav-item">
-                <a href="" class="nav-link">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <div>
+        <span class="navbar-text">Iqbal Mahamud</span>
+      </div>
+      <div>
+        <nav>
+          <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Publications</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Start Up</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <section class="profile-picture">
-      <div class="row flex-column flex-md-row">
-        <div class="col">
-          <img src="assets/iqbal.jpg" alt="" class="img-fluid rounded" />
-        </div>
-        <div
-          class="col about-me"
-          style="display: flex; justify-content: center; align-items: center"
-        >
+      <div class="item-1">
+        <img src="assets/iqbal.jpg" alt="" />
+      </div>
+      <div class="item-2 about-me-details">
+        <div>
+          <h1>About Me</h1>
+          <div class="typewriter">
+            <h1>
+              CS Undergrad<span style="color: grey; font-weight: 900">,</span
+              >Minimalist<span style="color: grey; font-weight: 900">,</span
+              >Love to read
+            </h1>
+          </div>
           <div>
-            <h1>About Me</h1>
-            <div class="typewriter">
-              <h1>
-                CS Undergrad<span style="color: grey; font-weight: 900">,</span
-                >Minimalist<span style="color: grey; font-weight: 900">,</span
-                >Love to read
-              </h1>
-            </div>
-
-            <div>
-              <i class="fa-brands fa-square-facebook"></i>
-              <i class="fa-brands fa-square-github"></i>
-              <i class="fa-brands fa-linkedin"></i>
-            </div>
-
-            <div class="mailto">
-              <a href="mailto:your.email@example.com">Send Email</a>
-            </div>
-
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-github"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+          <div class="mailto">
+            <a href="mailto:your.email@example.com">Send Email</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="profile-picture show-off">
+    <section class="show-off">
       <div class="vertical-line">
         <div class="projects">
           <div class="projects-branch">
@@ -124,104 +107,55 @@
               <div style="width: 10%">
                 <hr />
               </div>
-              <div class="row flex-column flex-md-row" style="width: 90%">
-                <div class="col projects-design">
-                  <div id="demo" class="carousel slide" data-bs-ride="carousel">
-                    <!-- Indicators/dots -->
-                    <div class="carousel-indicators">
-                      <button
-                        type="button"
-                        data-bs-target="#demo"
-                        data-bs-slide-to="0"
-                        class="active"
-                      ></button>
-                      <button
-                        type="button"
-                        data-bs-target="#demo"
-                        data-bs-slide-to="1"
-                      ></button>
-                      <button
-                        type="button"
-                        data-bs-target="#demo"
-                        data-bs-slide-to="2"
-                      ></button>
-                    </div>
-
-                    <!-- The slideshow/carousel -->
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img
-                          src="assets/friends.jpg"
-                          alt="Los Angeles"
-                          class="d-block w-100 img-fluid"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="assets/home.jpg"
-                          alt="Chicago"
-                          class="d-block w-100 img-fluid"
-                        />
-                      </div>
-                      <div class="carousel-item">
-                        <img
-                          src="assets/signin.jpg"
-                          alt="New York"
-                          class="d-block w-100 img-fluid"
-                        />
-                      </div>
-                    </div>
-
-                    <!-- Left and right controls/icons -->
-                    <button
-                      class="carousel-control-prev"
-                      type="button"
-                      data-bs-target="#demo"
-                      data-bs-slide="prev"
-                    >
-                      <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button
-                      class="carousel-control-next"
-                      type="button"
-                      data-bs-target="#demo"
-                      data-bs-slide="next"
-                    >
-                      <span class="carousel-control-next-icon"></span>
-                    </button>
-                  </div>
+              <div class="projects-grid-container" style="width: 90%">
+                <div class="projects-design">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quibusdam doloremque! Atque, quod ratione tempore ipsa perspiciatis dolorem earum veniam omnis voluptates sit ad ullam corporis temporibus esse voluptas nobis!
+                  </p>
                 </div>
 
-                <div class="col projects-details">
+                <div class="projects-details">
                   <span class="projects-caption">
-                    Embarking on an Advanced Programming lab project, I took the lead in crafting an application. 
-                    <br>
-                    <br>
-                    This cutting-edge platform is meticulously engineered to elevate the student experience with a suite of indispensable features:
-                    <br>
-                    <br>
-                    <strong>Upcoming Schedules:</strong> Receive timely updates on imminent class tests, assignments, and lab sessions.
-                    <br>
-                    <strong>Daily Class Routine:</strong> Effortlessly navigate through the daily class schedule for a quick grasp of the day's agenda.
-<br>
-                    <strong>Classmate Communication:</strong> Foster seamless communication by connecting with classmates through the app.
-<br>
-                    <strong>Blood Group Search:</strong> Enhance community engagement by allowing users to locate classmates based on their blood group.
-<br>
-                    <strong>Hall of Fame:</strong> Establish a dedicated space to celebrate the accomplishments of peers, creating a positive and motivating environment.
-<br>
-                    <strong>Birthday Love:</strong> Express heartfelt sentiments on friends' birthdays, infusing a personalized touch into the virtual space.
-<br>
-                    <strong>Attendance Calculator:</strong> Ensure precise attendance tracking, streamlining calculations at the semester's conclusion.
-<br>
-<br>
-Guided by the belief that design enhances user experience, Virtual Cr features a dynamic interface. Recognizing the monotony of black-and-white class routines, the app aims to infuse enthusiasm into routine academic tasks.
-
-
-
-
-
-
+                    Embarking on an Advanced Programming lab project, I took the
+                    lead in crafting an application.
+                    <br />
+                    <br />
+                    This cutting-edge platform is meticulously engineered to
+                    elevate the student experience with a suite of indispensable
+                    features:
+                    <br />
+                    <br />
+                    <strong>Upcoming Schedules:</strong> Receive timely updates
+                    on imminent class tests, assignments, and lab sessions.
+                    <br />
+                    <strong>Daily Class Routine:</strong> Effortlessly navigate
+                    through the daily class schedule for a quick grasp of the
+                    day's agenda.
+                    <br />
+                    <strong>Classmate Communication:</strong> Foster seamless
+                    communication by connecting with classmates through the app.
+                    <br />
+                    <strong>Blood Group Search:</strong> Enhance community
+                    engagement by allowing users to locate classmates based on
+                    their blood group.
+                    <br />
+                    <strong>Hall of Fame:</strong> Establish a dedicated space
+                    to celebrate the accomplishments of peers, creating a
+                    positive and motivating environment.
+                    <br />
+                    <strong>Birthday Love:</strong> Express heartfelt sentiments
+                    on friends' birthdays, infusing a personalized touch into
+                    the virtual space.
+                    <br />
+                    <strong>Attendance Calculator:</strong> Ensure precise
+                    attendance tracking, streamlining calculations at the
+                    semester's conclusion.
+                    <br />
+                    <br />
+                    Guided by the belief that design enhances user experience,
+                    Virtual Cr features a dynamic interface. Recognizing the
+                    monotony of black-and-white class routines, the app aims to
+                    infuse enthusiasm into routine academic tasks.
                   </span>
                 </div>
               </div>
@@ -254,19 +188,27 @@ Guided by the belief that design enhances user experience, Virtual Cr features a
               <div style="width: 10%">
                 <hr />
               </div>
-              <div class="row flex-column flex-md-row" style="width: 90%">
-                <div class="col projects-design">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia beatae autem eaque vel sit voluptates dignissimos ullam, nobis explicabo hic rem tempora libero, perferendis optio omnis magnam laborum non ipsa.</p>
+              <div class="projects-grid-container" style="width: 90%">
+                <div class="projects-design">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quia beatae autem eaque vel sit voluptates dignissimos
+                    ullam, nobis explicabo hic rem tempora libero, perferendis
+                    optio omnis magnam laborum non ipsa.
+                  </p>
                 </div>
-                <div class="col projects-details">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, ipsum quam nobis commodi similique ipsa explicabo voluptatum delectus vero quisquam quidem labore dolore saepe facere placeat provident rerum doloremque sint.</p>
+                <div class="projects-details">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nemo, ipsum quam nobis commodi similique ipsa explicabo
+                    voluptatum delectus vero quisquam quidem labore dolore saepe
+                    facere placeat provident rerum doloremque sint.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-
 
         <!-- start up -->
         <div class="projects">
@@ -292,17 +234,24 @@ Guided by the belief that design enhances user experience, Virtual Cr features a
               <div style="width: 10%">
                 <hr />
               </div>
-              <div class="row flex-column flex-md-row" style="width: 90%">
-                <div class="col projects-design">
-                  <img src="assets/bitmask.png" alt="" class="img-fluid">
+              <div class="projects-grid-container" style="width: 90%">
+                <div class="projects-design">
+                  <img src="assets/bitmask.png" alt="" />
                 </div>
-                <div class="col projects-details">
+                <div class="projects-details">
                   <p>
                     <span class="projects-caption">
-                      Discover the future with Project Bitmask, where education meets innovation. Dive into Doubt Solver, our pioneering initiative connecting learners with online experts across academic levels.
-                      <br>
-                      <br>
-                      Formed by a close-knit team of five friends, we're more than a startup – we're a dynamic force poised to provide end-to-end solutions for modern enterprises. Join us on this exciting journey, as we redefine the landscape of education and business with passion and innovation.
+                      Discover the future with Project Bitmask, where education
+                      meets innovation. Dive into Doubt Solver, our pioneering
+                      initiative connecting learners with online experts across
+                      academic levels.
+                      <br />
+                      <br />
+                      Formed by a close-knit team of five friends, we're more
+                      than a startup – we're a dynamic force poised to provide
+                      end-to-end solutions for modern enterprises. Join us on
+                      this exciting journey, as we redefine the landscape of
+                      education and business with passion and innovation.
                     </span>
                   </p>
                 </div>
@@ -310,18 +259,11 @@ Guided by the belief that design enhances user experience, Virtual Cr features a
             </div>
           </div>
         </div>
-        
-
-           
-
-
-
-
-
       </div>
     </section>
 
-    <footer class="profile-picture">
+
+    <footer>
       <h1>Thanks for visiting</h1>
       <i class="fa-regular fa-copyright"></i>
       <span style="font-size: 2rem; margin-left: 5px; margin-bottom: 5px"
@@ -335,5 +277,7 @@ Guided by the belief that design enhances user experience, Virtual Cr features a
         </div>
       </div>
     </footer>
+
+
   </body>
 </html>

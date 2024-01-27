@@ -1,30 +1,53 @@
 html {
   font-size: 62.5%;
 }
-
 header {
   font-size: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 6rem;
   padding-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+header ul {
+  display: flex;
+  justify-content: start;
+}
+header ul li {
+  padding-right: 1.5rem;
+  list-style-type: none;
+}
+header ul li a {
+  font-family: "Unna", serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: grey;
+  text-decoration: none;
 }
 .navbar-text {
   font-weight: 900;
   font-size: 3rem;
   font-family: "Cedarville Cursive", "cursive";
 }
-.nav-link {
-  font-family: "Unna", serif;
-  font-size: 2rem;
-  font-weight: 900;
-}
+
 .profile-picture {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem 3rem;
   background-color: rgb(250, 247, 247);
-  padding-top: 3rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  padding-bottom: 3rem;
+  padding: 3rem 5rem;
+}
+
+.profile-picture img{
+  width: 100%;
+  height: auto;
+}
+
+.about-me-details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fa-brands {
@@ -34,21 +57,21 @@ header {
   padding-top: 2.5rem;
 }
 
-.mailto{
-    margin-top: 1.5rem;
-    padding: 2rem;
-    background-color: white;
-    width: 140px;
-    border-radius: 20px;
+.mailto {
+  margin-top: 1.5rem;
+  padding: 2rem;
+  background-color: white;
+  width: 140px;
+  border-radius: 20px;
 }
 
-.mailto a{
-    text-decoration: none;
-    font-size: 2rem;
-    font-weight: 800;
-    color: grey;
-    font-family: "Unna", serif;
-    font-style: normal;
+.mailto a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 800;
+  color: grey;
+  font-family: "Unna", serif;
+  font-style: normal;
 }
 
 .fa-regular {
@@ -91,6 +114,7 @@ header {
 }
 
 .show-off {
+  padding: 3rem 5rem;
   background-color: white;
   height: auto;
 }
@@ -100,24 +124,29 @@ header {
   width: 100%;
   border-left: 4px solid black;
 }
-
 .projects {
   margin-top: 3rem;
   width: 100%;
-  /* border: 1px solid red; */
 }
-
 .projects-branch {
   display: flex;
   justify-content: flex-end;
   width: 35%;
-  /* border: 1px solid saddlebrown; */
 }
-
 .projects-content {
   margin-left: 35%;
   border-left: 3px solid black;
   border-radius: 3px;
+}
+
+.projects-grid-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.projects-grid-container img{
+  width: 100%;
+  height: auto;
 }
 
 .projects-design {
@@ -148,6 +177,13 @@ hr {
   background-color: black; /* Set the background color of the line */
 }
 
+
+footer{
+  background-color: rgb(250, 247, 247);
+  padding: 3rem 5rem;
+}
+
+
 @media (max-width: 768px) {
   .typewriter h1 {
     white-space: wrap;
@@ -161,5 +197,11 @@ hr {
   }
   .projects-details {
     margin-top: 2rem;
+  }
+  .profile-picture{
+    grid-template-columns: 1fr;
+  }
+  .projects-grid-container{
+    grid-template-columns: 1fr;
   }
 }
